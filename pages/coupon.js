@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head'
+import Link from 'next/link'
 import Footer from '../components/Footer'
 import HeaderSubPage from '../components/HeaderSubPage'
 
@@ -17,7 +18,7 @@ const CouponPage = () => {
                             Get Your Coupon
                         </h1>
                         <p className="mt-4 text-lg leading-6 text-gray-500">
-                            Enter your email address to get a $10 off coupon e-mailed to you each year. Accepted at our <a href="https://olympicchristmastrees.com/rancho-cucamonga">tree lot in Rancho Cucamonga.</a>
+                            Enter your email address to get a $10 off coupon e-mailed to you each year. Accepted at our <Link href="https://olympicchristmastrees.com/rancho-cucamonga">tree lot in Rancho Cucamonga.</Link>
                         </p>
                     </div>
                     <div id="mc_embed_signup" className="mt-12">

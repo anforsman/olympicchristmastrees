@@ -4,7 +4,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <>
-            <div className="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+            <div className="bg-white py-8 px-4 overflow-hidden sm:px-6 lg:px-8 lg:pt-12 lg:pb-24">
                 <div className="relative max-w-xl mx-auto">
                     <div className="text-center">
                         <h1 className="mt-2 mb-8 text-4xl text-center leading-none font-extrabold tracking-tight text-gray-900 sm:text-6xl">
@@ -15,7 +15,7 @@ const Contact = () => {
                         </p>
                     </div>
                     <div className="mt-12">
-                        <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                        <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true">
                             <div>
                                 <label for="first_name" className="block text-sm font-medium leading-5 text-gray-700">First name</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">

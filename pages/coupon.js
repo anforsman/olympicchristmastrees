@@ -11,7 +11,7 @@ const CouponPage = () => {
                 <title>Get $10 Off Your Christmas Tree | Rancho Cucamonga, CA</title>
             </Head>
             <HeaderSubPage />
-            <div className="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+            <div className="bg-white py-8 px-4 overflow-hidden sm:px-6 lg:px-8 lg:pt-12 lg:pb-24">
                 <div className="relative max-w-xl mx-auto">
                     <div className="text-center">
                         <h1 className="mt-2 mb-8 text-4xl text-center leading-none font-extrabold tracking-tight text-gray-900 sm:text-6xl">
@@ -22,7 +22,7 @@ const CouponPage = () => {
                         </p>
                     </div>
                     <div id="mc_embed_signup" className="mt-12">
-                        <form id="mc-embedded-subscribe-form" action="http://olympictrees.us6.list-manage1.com/subscribe/post?u=5ab7bc9cf312e2edb49ea965d&amp;id=4e98db6942" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                        <form id="mc-embedded-subscribe-form"  method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true">
 
                             <div className="sm:col-span-2">
                                 <label for="mce-EMAIL" className="block text-sm font-medium leading-5 text-gray-700 sr-only">Email</label>

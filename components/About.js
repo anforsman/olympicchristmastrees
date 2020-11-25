@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="relative pt-16 pb-24 bg-white overflow-hidden">
+        <div className="relative pt-8 pb-24 bg-white overflow-hidden">
             <div className="relative px-4 sm:px-6 lg:px-8">
                 <div className="text-lg max-w-prose mx-auto mb-12">
                     <p className="text-base text-center leading-6 text-red-700 font-semibold tracking-wide uppercase">Olympic Christmas Trees</p>

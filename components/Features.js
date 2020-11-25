@@ -11,12 +11,12 @@ const Features = () => {
         <div className="max-w-6xl pb-24 px-8 xl:px-0 mx-auto">
 
             <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
-                <div className="relative py-4">
+                <div className="relative pt-4">
                     <PreTitle>Big trees for the biggest holiday</PreTitle>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                         Christmas trees up to 12 feet tall.
                     </h3>
-                    <p className="mt-3 text-lg text-gray-700">
+                    <p className="mt-3 mb-0 pb-0 text-lg text-gray-700">
                         Choose from Douglas, Korean, Noble, and Nordmann Fir in both sheared and natural varieties.
                     </p>
                 </div>
@@ -26,12 +26,12 @@ const Features = () => {
                 </div>
             </div>
 
-            <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
-                <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+            <div className="relative mt-12 lg:mt-24 flex flex-col lg:flex-row lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+                <div className="mt-10 -mx-4 relative lg:mt-0 order-last lg:order-first" aria-hidden="true">
                     <img className="relative mx-auto" width="800" src="/little-christmas-trees.jpg" alt="" />
                 </div>
                 
-                <div className="relative py-8">
+                <div className="relative lg:pt-8">
                     <PreTitle>Perfect for bedrooms and offices</PreTitle>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                         Little trees a foot small.
@@ -43,7 +43,7 @@ const Features = () => {
             </div>
 
             <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
-                <div className="relative py-8">
+                <div className="relative lg:pt-8">
                     <PreTitle>Unmatched freshness.</PreTitle>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                     The freshest trees in Rancho.
@@ -58,12 +58,12 @@ const Features = () => {
                 </div>
             </div>
 
-            <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
-                <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+            <div className="relative mt-12 lg:mt-24 flex flex-col lg:flex-row lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+                <div className="mt-10 -mx-4 relative lg:mt-0 order-last lg:order-first" aria-hidden="true">
                     <img className="relative mx-auto" width="800" src="/shaker.jpg" alt="" />
                 </div>
                 
-                <div className="relative py-8">
+                <div className="relative lg:pt-8">
                     <PreTitle>Leave the mess at the lot</PreTitle>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                     We shake out the old needles.

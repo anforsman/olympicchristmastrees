@@ -13,8 +13,10 @@ const Coupon = () => {
                 </p>
                 </div>
                 <div className="mt-8 lg:mt-0 lg:ml-8">
-                    <form className="sm:flex" aria-labelledby="newsletter-headline" data-netlify="true">
+                    <form className="sm:flex" aria-labelledby="newsletter-headline" data-netlify="true" name="footerCoupon">
                         <input aria-label="Email address" type="email" required className="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out sm:max-w-xs" placeholder="Enter your email" />
+
+                        <input type="hidden" name="form-name" value="footerCoupon" />
                         <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                         <button className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-red-700 hover:bg-red-600 focus:outline-none focus:bg-red-400 transition duration-150 ease-in-out">
                             Join

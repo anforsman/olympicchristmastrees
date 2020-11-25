@@ -22,7 +22,7 @@ const CouponPage = () => {
                         </p>
                     </div>
                     <div id="mc_embed_signup" className="mt-12">
-                        <form id="mc-embedded-subscribe-form"  method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true">
+                        <form id="mc-embedded-subscribe-form" name="coupon"  method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true" >
 
                             <div className="sm:col-span-2">
                                 <label for="mce-EMAIL" className="block text-sm font-medium leading-5 text-gray-700 sr-only">Email</label>
@@ -30,6 +30,7 @@ const CouponPage = () => {
                                     <input id="mce-EMAIL" type="email" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border border-gray-700 rounded" placeholder="Enter your email address" />
                                 </div>
                             </div>
+                            <input type="hidden" name="form-name" value="coupon" />
 
                             <div id="mce-responses"></div>
 

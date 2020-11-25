@@ -15,7 +15,7 @@ const Contact = () => {
                         </p>
                     </div>
                     <div className="mt-12">
-                        <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true">
+                        <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true" name="contact">
                             <div>
                                 <label for="first_name" className="block text-sm font-medium leading-5 text-gray-700">First name</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
@@ -50,6 +50,8 @@ const Contact = () => {
                                     <textarea id="message" rows="4" className="form-textarea py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700"></textarea>
                                 </div>
                             </div>
+
+                            <input type="hidden" name="form-name" value="contact" />
 
                             <div className="sm:col-span-2">
                             <span className="w-full inline-flex rounded-md shadow-sm">

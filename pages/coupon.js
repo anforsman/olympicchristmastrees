@@ -54,7 +54,7 @@ const CouponPage = () => {
                             name="coupon"
                             method="post"
                             data-netlify="true" 
-                            data-netlify-honeypot="bot-field"
+                            data-netlify-honeypot="pleaseFill"
                             className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                             onSubmit={handleSubmit} >
 
@@ -62,14 +62,14 @@ const CouponPage = () => {
 
                             <p hidden>
                                 <label>
-                                    Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+                                    Don’t fill this out: <input name="pleaseFill" value={state.pleaseFill} onChange={handleChange} />
                                 </label>
                             </p>
 
                             <div className="sm:col-span-2">
                                 <label htmlFor="mce-EMAIL" className="block text-sm font-medium leading-5 text-gray-700 sr-only">Email</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
-                                    <input id="mce-EMAIL" type="email" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border border-gray-700 rounded" placeholder="Enter your email address" onChange={handleChange} />
+                                    <input name="email" type="email" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border border-gray-700 rounded" placeholder="Enter your email address" value={state.email} onChange={handleChange} />
                                 </div>
                             </div>
 

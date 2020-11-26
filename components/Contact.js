@@ -90,7 +90,7 @@ const Contact = () => {
                             <div className="sm:col-span-2">
                                 <label for="message" name="message" className="block text-sm font-medium leading-5 text-gray-700">Message</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
-                                    <textarea id="message" rows="4" className="form-textarea py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" value={state.message} onChange={handleChange} ></textarea>
+                                    <textarea id="message" name="message" rows="4" className="form-textarea py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" onChange={handleChange} >{state.message}</textarea>
                                 </div>
                             </div>
 

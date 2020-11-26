@@ -21,7 +21,9 @@ const ChristmasTrees = () => {
                     <div className="prose prose-lg text-gray-800 mx-auto">
                         <p className="pb-8 text-lg leading-relaxed">We sell four common types of trees, which all have their own characteristics making them unique. Some smell stronger and some last longer. Our staff is super knowledgeable so when you visit the tree lot, feel free to ask as many questions as you'd like! </p>
 
-                        <p className="pb-8 text-lg leading-relaxed">DOUGLAS FIR | NOBLE FIR | KOREAN FIR | NORDMAN FIR</p>
+                        <p className="pb-8 text-lg leading-relaxed">DOUGLAS FIR | NOBLE FIR | KOREAN FIR | NORDMAN FIR <span className="block text-sm italic text-red-600">*Please note: We will not have any Natural Douglas Fir this year.</span></p>
+
+                        
 
                         <p className="pb-8 text-lg leading-relaxed">The trees are available sheared or natural. The sheared trees are the full, conical-shaped trees that are common throughout all Christmas tree lots. The naturals, however, take on a shape of their own, because we let them grow as if they were wild. The only maintenance that we perform is end clipping a few branches to maintain some control over the growth of the tree.</p>
 

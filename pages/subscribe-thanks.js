@@ -23,7 +23,6 @@ const SubscribeThanks = () => {
                     </div>
                 </div>
             </div>
-            <Coupon />
             <Footer />
         </>
     );

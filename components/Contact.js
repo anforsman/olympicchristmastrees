@@ -62,33 +62,33 @@ const Contact = () => {
                             <div>
                                 <label for="first_name" className="block text-sm font-medium leading-5 text-gray-700">First name</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
-                                    <input id="first_name" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" value={state.first_name} onChange={handleChange} />
+                                    <input id="first_name" name="first_name" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" value={state.first_name} onChange={handleChange} />
                                 </div>
                             </div>
 
                             <div>
                                 <label for="last_name" className="block text-sm font-medium leading-5 text-gray-700">Last name</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
-                                    <input id="last_name" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" value={state.last_name} onChange={handleChange} />
+                                    <input id="last_name" name="last_name" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" value={state.last_name} onChange={handleChange} />
                                 </div>
                             </div>
 
                             <div className="sm:col-span-2">
                                 <label for="email" className="block text-sm font-medium leading-5 text-gray-700">Email</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
-                                    <input id="email" type="email" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" value={state.email} onChange={handleChange} />
+                                    <input id="email" name="email" type="email" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" value={state.email} onChange={handleChange} />
                                 </div>
                             </div>
 
                             <div className="sm:col-span-2">
                                 <label for="phone_number" className="block text-sm font-medium leading-5 text-gray-700">Phone Number</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
-                                    <input id="phone_number" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" placeholder="+1 (555) 987-6543" value={state.phone_number} onChange={handleChange} />
+                                    <input id="phone_number" name="phone_number" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" placeholder="+1 (555) 987-6543" value={state.phone_number} onChange={handleChange} />
                                 </div>
                             </div>
 
                             <div className="sm:col-span-2">
-                                <label for="message" className="block text-sm font-medium leading-5 text-gray-700">Message</label>
+                                <label for="message" name="message" className="block text-sm font-medium leading-5 text-gray-700">Message</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
                                     <textarea id="message" rows="4" className="form-textarea py-3 px-4 block w-full transition ease-in-out duration-150 border rounded border-gray-700" value={state.message} onChange={handleChange} ></textarea>
                                 </div>

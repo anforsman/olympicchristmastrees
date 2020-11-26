@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Link from 'next/link'
 
 const Coupon = () => {
+
+    const [ email, setEmail ] = useState('')
+
+    const handleSubmit = () => {
+        const data = {
+            email: email
+        }
+        return axios({
+            method: 'post',
+            url: '/.netlify/functions/signup',
+            data: data,
+        })
+    }
+
     return (
         <div className="bg-green-900" id="coupon">
             <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center">
@@ -19,13 +34,13 @@ const Coupon = () => {
                         method="post"
                         name="mc-embedded-subscribe-form"
                         novalidate=""
-                        target="_blank"
-                        data-netlify="true"
-                        >
+                        onSubmit={handleSubmit}>
                             <input type="hidden" name="form-name" value="mc-embedded-subscribe-form" />
-                        <input aria-label="Email address" type="email" required className="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out sm:max-w-xs" placeholder="Enter your email" />
+                        <input aria-label="Email address" type="email" required className="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out sm:max-w-xs" placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => { setEmail(e.target.value) }} />
                         <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                        <button className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-red-700 hover:bg-red-600 focus:outline-none focus:bg-red-400 transition duration-150 ease-in-out">
+                        <button type="submit" className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-red-700 hover:bg-red-600 focus:outline-none focus:bg-red-400 transition duration-150 ease-in-out">
                             Join
                         </button>
                         </div>

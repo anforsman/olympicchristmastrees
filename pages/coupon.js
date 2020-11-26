@@ -4,9 +4,34 @@ import Link from 'next/link'
 import Footer from '../components/Footer'
 import HeaderSubPage from '../components/HeaderSubPage'
 
-const CouponPage = () => {
+function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
 
-    const [ email, setEmail ] = useState('')
+const CouponPage = () => {
+    
+    const [state, setState] = useState({})
+
+    const handleChange = (e) => {
+        setState({ ...state, [e.target.name]: e.target.value })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const form = e.target
+        fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+            'form-name': form.getAttribute('name'),
+            ...state,
+        }),
+        })
+        .then(() => navigate(form.getAttribute('action')))
+        .catch((error) => alert(error))
+    }
 
     return (
         <>
@@ -25,15 +50,27 @@ const CouponPage = () => {
                         </p>
                     </div>
                     <div id="mc_embed_signup" className="mt-12">
-                        <form id="mc-embedded-subscribe-form" action="http://olympictrees.us6.list-manage1.com/subscribe/post?u=5ab7bc9cf312e2edb49ea965d&amp;id=4e98db6942" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                        <form
+                            name="coupon"
+                            method="post"
+                            action="/thanks/"
+                            data-netlify="true" 
+                            data-netlify-honeypot="bot-field"
+                            className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                            onSubmit={handleSubmit} >
 
-                        <input type="hidden" name="u" value="5ab7bc9cf312e2edb49ea965d"/>
-                        <input type="hidden" name="id" value="4e98db6942"/>
+                            <input type="hidden" name="form-name" value="coupon" />
+
+                            <p hidden>
+                                <label>
+                                    Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+                                </label>
+                            </p>
 
                             <div className="sm:col-span-2">
-                                <label for="mce-EMAIL" className="block text-sm font-medium leading-5 text-gray-700 sr-only">Email</label>
+                                <label htmlFor="mce-EMAIL" className="block text-sm font-medium leading-5 text-gray-700 sr-only">Email</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
-                                    <input id="mce-EMAIL" type="email" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border border-gray-700 rounded" placeholder="Enter your email address" value={email} onChange = {(e) => setEmail(e.target.value)} />
+                                    <input id="mce-EMAIL" type="email" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border border-gray-700 rounded" placeholder="Enter your email address" onChange={handleChange} />
                                 </div>
                             </div>
 
@@ -47,16 +84,7 @@ const CouponPage = () => {
                                 </span>
                             </div>
 
-                            <div style={{position: 'absolute', left: '-5000px'}} aria-hidden='true' aria-label="Please leave the following three fields empty">
-                            <label htmlFor="b_name">Name: </label>
-                            <input type="text" name="b_name" tabIndex="-1" value="" placeholder="Freddie" id="b_name"/>
-
-                            <label htmlFor="b_email">Email: </label>
-                            <input type="email" name="b_email" tabIndex="-1" value="" placeholder="youremail@gmail.com" id="b_email"/>
-
-                            <label htmlFor="b_comment">Comment: </label>
-                            <textarea name="b_comment" tabIndex="-1" placeholder="Please comment" id="b_comment"></textarea>
-                        </div>
+                            
                         </form>
                     </div>
                 </div>

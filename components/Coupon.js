@@ -58,7 +58,7 @@ const Coupon = () => {
                                     Don’t fill this out: <input name="pleaseFill" value={state.pleaseFill} onChange={handleChange} />
                                 </label>
                             </p>
-                        <input aria-label="Email address" type="email" required className="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out sm:max-w-xs" placeholder="Enter your email"
+                        <input aria-label="Email address" type="email" name="email" required className="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out sm:max-w-xs" placeholder="Enter your email"
                         value={state.email}
                         onChange={handleChange} />
                         <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">

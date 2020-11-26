@@ -72,11 +72,9 @@ const CouponPage = () => {
                             <div className="sm:col-span-2">
                                 <label htmlFor="mce-EMAIL" className="block text-sm font-medium leading-5 text-gray-700 sr-only">Email</label>
                                 <div className="mt-1 relative rounded-md shadow-sm">
-                                    <input name="email" type="email" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border border-gray-700 rounded" placeholder="Enter your email address" value={state.email} onChange={handleChange} />
+                                    <input name="email" type="email" id="mce-EMAIL" className="form-input py-3 px-4 block w-full transition ease-in-out duration-150 border border-gray-700 rounded" placeholder="Enter your email address" value={state.email} onChange={handleChange} />
                                 </div>
                             </div>
-
-                            <div id="mce-responses"></div>
 
                             <div className="sm:col-span-2">
                                 <span className="w-full inline-flex rounded-md shadow-sm">

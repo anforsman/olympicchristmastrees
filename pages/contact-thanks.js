@@ -4,21 +4,21 @@ import Footer from '../components/Footer'
 import HeaderSubPage from '../components/HeaderSubPage'
 import Coupon from '../components/Coupon'
 
-const SubscribeThanks = () => {
+const ContactThanks = () => {
     return (
         <>
             <Head>
-                <title>Verify your email</title>
+                <title>Thanks for your message | Olympic Christmas Trees</title>
             </Head>
             <HeaderSubPage />
             <div className="bg-white py-8 px-4 overflow-hidden sm:px-6 lg:px-8 lg:pt-12 lg:pb-24">
                 <div className="relative max-w-3xl mx-auto">
                     <div className="text-center">
                         <h1 className="mt-2 mb-8 text-4xl text-center leading-none font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-                            Please Check Your Inbox
+                            Thanks for your message!
                         </h1>
                         <p className="mt-4 text-lg leading-6 text-gray-900">
-                            A verification email was just sent to your inbox. Once you're verified, you'll be emailed the coupon. Thanks!
+                            We'll be in touch soon.  For urgent matters, please call 714-655-8338.
                         </p>
                     </div>
                 </div>
@@ -29,4 +29,4 @@ const SubscribeThanks = () => {
     );
 };
 
-export default SubscribeThanks;
+export default ContactThanks;

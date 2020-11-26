@@ -1,19 +1,36 @@
 import React, { useState } from 'react';
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
 
 const Coupon = () => {
 
-    const [ email, setEmail ] = useState('')
+    const router = useRouter()
 
-    const handleSubmit = () => {
-        const data = {
-            email: email
-        }
-        return axios({
-            method: 'post',
-            url: '/.netlify/functions/signup',
-            data: data,
+    const [state, setState] = useState({})
+
+    const handleChange = (e) => {
+        setState({ ...state, [e.target.name]: e.target.value })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const form = e.target
+        fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+            'form-name': form.getAttribute('name'),
+            ...state,
+        }),
         })
+        .then(() => router.push('/subscribe-thanks'))
+        .catch((error) => alert(error))
     }
 
     return (
@@ -29,16 +46,21 @@ const Coupon = () => {
                 </div>
                 <div className="mt-8 lg:mt-0 lg:ml-8">
                     <form
-                        className="sm:flex" aria-labelledby="newsletter-headline"
-                        id="mc-embedded-subscribe-form"
+                        className="sm:flex"
+                        name="coupon"
                         method="post"
-                        name="mc-embedded-subscribe-form"
-                        novalidate=""
+                        data-netlify="true" 
+                        data-netlify-honeypot="pleaseFill"
                         onSubmit={handleSubmit}>
-                            <input type="hidden" name="form-name" value="mc-embedded-subscribe-form" />
+                            <input type="hidden" name="form-name" value="coupon" />
+                            <p hidden>
+                                <label>
+                                    Don’t fill this out: <input name="pleaseFill" value={state.pleaseFill} onChange={handleChange} />
+                                </label>
+                            </p>
                         <input aria-label="Email address" type="email" required className="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out sm:max-w-xs" placeholder="Enter your email"
-                        value={email}
-                        onChange={(e) => { setEmail(e.target.value) }} />
+                        value={state.email}
+                        onChange={handleChange} />
                         <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                         <button type="submit" className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-red-700 hover:bg-red-600 focus:outline-none focus:bg-red-400 transition duration-150 ease-in-out">
                             Join

@@ -29,7 +29,7 @@ const CouponPage = () => {
             ...state,
         }),
         })
-        .then(() => navigate(form.getAttribute('action')))
+        .then((response) => alert(response))
         .catch((error) => alert(error))
     }
 
@@ -53,7 +53,6 @@ const CouponPage = () => {
                         <form
                             name="coupon"
                             method="post"
-                            action="/thanks/"
                             data-netlify="true" 
                             data-netlify-honeypot="bot-field"
                             className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"

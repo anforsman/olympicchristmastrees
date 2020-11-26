@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Footer from '../components/Footer'
 import HeaderSubPage from '../components/HeaderSubPage'
 
@@ -12,6 +13,8 @@ function encode(data) {
 
 const CouponPage = () => {
     
+    const router = useRouter()
+
     const [state, setState] = useState({})
 
     const handleChange = (e) => {
@@ -29,7 +32,7 @@ const CouponPage = () => {
             ...state,
         }),
         })
-        .then((response) => alert(response))
+        .then(() => router.push('/subscribe-thanks'))
         .catch((error) => alert(error))
     }
 

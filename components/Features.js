@@ -81,7 +81,7 @@ const Features = () => {
                     Archibald &amp; Baseline
                     </h2>
                     <p className="mt-3 pb-4 text-lg leading-6 text-gray-700">
-                        We're back in Rancho Cucamonga for our 41st year.
+                        Olympic is back in Rancho Cucamonga for its 41st year. Tree lot opens Friday, Nov. 27th at noon!
                     </p>
 
                     <div className="pb-4">

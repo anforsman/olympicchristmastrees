@@ -88,7 +88,7 @@ export default function Header({ title }) {
           <section className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
             <div className="text-center">
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-white sm:text-5xl sm:leading-none md:text-6xl">
-                Fresh Trees Arrive 11/28
+                Fresh Trees Arrive 11/27
               </h2>
               <p className="mt-3 max-w-md mx-auto text-base text-gray-100 sm:text-lg md:mt-5 md:text-2xl md:max-w-3xl text-shadow">
                 Let's end 2020 on a high note!  Olympic Christmas Trees is returning to Rancho Cucamonga for our 41st year.

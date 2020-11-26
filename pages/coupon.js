@@ -21,7 +21,7 @@ const CouponPage = () => {
                             Get Your Coupon
                         </h1>
                         <p className="mt-4 text-lg leading-6 text-gray-500">
-                            Enter your email address to get a $10 off coupon e-mailed to you each year. Accepted at our <Link href="https://olympicchristmastrees.com/rancho-cucamonga">tree lot in Rancho Cucamonga.</Link>
+                            Enter your email address to get a $10 off coupon e-mailed to you each year. Accepted at our <Link href="/rancho-cucamonga">tree lot in Rancho Cucamonga.</Link>
                         </p>
                     </div>
                     <div id="mc_embed_signup" className="mt-12">
@@ -41,7 +41,7 @@ const CouponPage = () => {
 
                             <div className="sm:col-span-2">
                                 <span className="w-full inline-flex rounded-md shadow-sm">
-                                    <button type="button" id="mc-embedded-subscribe" name="subscribe" className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:border-red-800 focus:shadow-outline-red active:bg-red-800 transition ease-in-out duration-150">
+                                    <button type="submit" id="mc-embedded-subscribe" name="subscribe" className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:border-red-800 focus:shadow-outline-red active:bg-red-800 transition ease-in-out duration-150">
                                     Submit
                                     </button>
                                 </span>

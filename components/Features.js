@@ -81,7 +81,7 @@ const Features = () => {
                     Archibald &amp; Baseline
                     </h2>
                     <p className="mt-3 pb-4 text-lg leading-6 text-gray-700">
-                        Olympic is back in Rancho Cucamonga for its 41st year. Tree lot opens Friday, Nov. 27th at noon!
+                        We're sold out! Olympic will be back in Rancho Cucamonga in 2021 for year #42.
                     </p>
 
                     <div className="pb-4">
@@ -96,8 +96,7 @@ const Features = () => {
 
                     <h3 className="block text-gray-700 font-bold uppercase text-xs">Hours</h3>
                     <ul>
-                        <li>Sunday thru Thursday: 10am - 8pm</li>
-                        <li>Friday thru Saturday: 9am - 9pm</li>
+                        <li>Closed for the season!</li>
                     </ul>
                 </div>
 

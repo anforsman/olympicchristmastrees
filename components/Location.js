@@ -14,7 +14,7 @@ const Location = () => {
                 Archibald &amp; Baseline
                 </h1>
                 <p className="mt-3 pb-4 text-lg leading-6 text-gray-700">
-                    We're back in Rancho Cucamonga for our 41st year. Tree lot opens Friday, Nov. 27th at noon!
+                    The tree lot is sold out! We'll be back in Rancho Cucamonga in 2021 for our 42nd year.
                 </p>
 
                 <div className="pb-4">
@@ -29,8 +29,7 @@ const Location = () => {
 
                 <h3 className="block text-gray-700 font-bold uppercase text-xs">Hours</h3>
                 <ul>
-                    <li>Sunday thru Thursday: 10am - 8pm</li>
-                    <li>Friday thru Saturday: 9am - 9pm</li>
+                    <li>Closed for the season!</li>
                 </ul>
             </div>
 

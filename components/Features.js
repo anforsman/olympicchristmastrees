@@ -81,7 +81,7 @@ const Features = () => {
                     Archibald &amp; Baseline
                     </h2>
                     <p className="mt-3 pb-4 text-lg leading-6 text-gray-700">
-                        We're sold out! Olympic will be back in Rancho Cucamonga in 2021 for year #42.
+                        The tree lot opens November 26th! 2021 marks our 42nd year selling trees in the Inland Empire.
                     </p>
 
                     <div className="pb-4">
@@ -96,7 +96,8 @@ const Features = () => {
 
                     <h3 className="block text-gray-700 font-bold uppercase text-xs">Hours</h3>
                     <ul>
-                        <li>Closed for the season!</li>
+                        <li>Fri - Sat: 9:00a - 9:00p</li>
+                        <li>Sun - Thurs: 10:00a - 8:00p</li>
                     </ul>
                 </div>
 

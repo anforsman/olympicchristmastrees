@@ -81,7 +81,7 @@ const Features = () => {
                     Archibald &amp; Baseline
                     </h2>
                     <p className="mt-3 pb-4 text-lg leading-6 text-gray-700">
-                        The tree lot opens November 26th! 2021 marks our 42nd year selling trees in the Inland Empire.
+                        The tree lot opens November 25th! 2022 marks our 43rd year selling trees in the Inland Empire.
                     </p>
 
                     <div className="pb-4">

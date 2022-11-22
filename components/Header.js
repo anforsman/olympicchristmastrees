@@ -88,10 +88,10 @@ export default function Header({ title }) {
           <section className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
             <div className="text-center">
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-white sm:text-5xl sm:leading-none md:text-6xl">
-                Opening Day: November 26th!
+                Opening Day: November 25th!
               </h2>
               <p className="mt-3 max-w-md mx-auto text-base text-gray-100 sm:text-lg md:mt-5 md:text-2xl md:max-w-3xl text-shadow">
-                Olympic Christmas Trees is returning to Rancho Cucamonga for our 42nd year! The tree lot kicks off the 2021 season at noon on November 26th. 
+                Olympic Christmas Trees is returning to Rancho Cucamonga for our 43rd year! The tree lot kicks off the 2022 season at noon on November 25th. 
               </p>
               <div className="mt-5 max-w-lg mx-auto sm:flex sm:justify-center md:mt-8">
                 <div className="rounded-md shadow">

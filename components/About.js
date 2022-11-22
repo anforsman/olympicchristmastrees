@@ -15,7 +15,7 @@ const About = () => {
 
                     <p className="pb-8 text-lg leading-relaxed">After one season with Olympic Christmas Trees, I was hooked! Every season since, I look forward to getting back on the lot to represent the family, to reconnect and interact with our customers and assist them in choosing a fresh tree for their Christmas celebration year after year. I have worked closely with Dan and Andrew, managing the tree lot for the past 6 years.</p> 
 
-                    <p className="pb-8 text-lg leading-relaxed">Starting this season, 2020, I am the new owner of Olympic Christmas Trees CA in Rancho Cucamonga. My family and I couldn't be more thrilled! Although Dan and Andrew will be missed, Olympic Christmas Trees CA will be here to uphold the same values, service and premium trees from the same family farms in Washington State you have grown fond of since day one. </p>
+                    <p className="pb-8 text-lg leading-relaxed">In 2020, I became the new owner of Olympic Christmas Trees CA in Rancho Cucamonga. My family and I couldn't be more thrilled! Although Dan and Andrew will be missed, Olympic Christmas Trees CA will be here to uphold the same values, service and premium trees from the same family farms in Washington State you have grown fond of since day one. </p>
 
                     <p className="pb-8 text-lg leading-relaxed">My family and I are looking forward to seeing you this season and we are excited for the years ahead.</p> 
 

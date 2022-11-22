@@ -29,7 +29,8 @@ const Location = () => {
 
                 <h3 className="block text-gray-700 font-bold uppercase text-xs">Hours</h3>
                 <ul>
-                    <li>Closed for the 2021 season.</li>
+                    <li>Sunday thru Thursday: 10am - 8pm</li>
+                    <li>Friday thru Saturday: 9am - 9pm</li>
                 </ul>
             </div>
 

@@ -6,7 +6,7 @@ const About = () => {
             <div className="relative px-4 sm:px-6 lg:px-8">
                 <div className="text-lg max-w-prose mx-auto mb-12">
                     <p className="text-base text-center leading-6 text-red-700 font-semibold tracking-wide uppercase">Olympic Christmas Trees</p>
-                    <h1 className="mt-2 mb-8 text-4xl text-center leading-none font-extrabold tracking-tight text-gray-900 sm:text-6xl">41 Years of Great Service &amp; The Freshest Trees</h1>
+                    <h1 className="mt-2 mb-8 text-4xl text-center leading-none font-extrabold tracking-tight text-gray-900 sm:text-6xl">43 Years of Great Service &amp; The Freshest Trees</h1>
                 </div>
                 <div className="prose prose-lg text-gray-800 mx-auto">
                     <p className="pb-8 text-lg leading-relaxed">Olympic Christmas Trees has been a staple in providing fresh grown Washington State Christmas trees to Rancho Cucamonga and neighboring SoCal areas for over 40 years. A family owned business that has set the standard in beautiful fresh trees and service. </p>

@@ -96,8 +96,7 @@ const Features = () => {
 
                     <h3 className="block text-gray-700 font-bold uppercase text-xs">Hours</h3>
                     <ul>
-                        <li>Fri - Sat: 9:00a - 9:00p</li>
-                        <li>Sun - Thurs: 10:00a - 8:00p</li>
+                        <li>Closed for the 2021 season.</li>
                     </ul>
                 </div>
 
